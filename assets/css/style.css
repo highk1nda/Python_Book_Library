@@ -10,6 +10,10 @@
     display: none;
 }
 
+body {
+    font-family: 'Mulish', sans-serif;
+}
+
 ul {
     list-style: none;
 }
@@ -53,9 +57,6 @@ a {
     max-height: 320px;
     height: auto;
     width: 90%;
-}
-.logo-svg{
-    height: 35px;
 }
 .svg-logo{
     width: 100%;
@@ -113,7 +114,6 @@ a {
 }
 .info{
     width: 100%;
-    padding-top: 3%;
 }
 
 @keyframes gradient {
@@ -143,29 +143,35 @@ p {
     background: #E6EBE6;
     width: 100%;
 }
-.bg-bottom{
-    background: linear-gradient(217deg, rgba(255,0,0,0.8), rgba(255,0,0,0) 50.71%),linear-gradient(127deg, rgba(50, 227, 50, 0.414), rgba(0,255,0,0) 70.71%),linear-gradient(336deg, rgba(0,0,255,0.8), rgba(0,0,255,0) 70.71%);
-    background-size: 180% 180%;
-    animation: gradient 12s ease infinite;
-    width: 100%;
-}
-.bg-bottom::before{
-    background: rgba(0, 0, 0, 0.5);
-}
+
 .link-parent:link {
-    color: rgba(0, 85, 142, 0.906);
+    color: rgba(0, 153, 255, 0.906);
     transition: 0.4s;
 }
-.link-parent{
-    color: rgba(0, 0, 0, 0.9)
+
+.link-parent:visited {
+    color: rgba(0, 153, 255, 0.906);
 }
+
 .link-parent:hover {
-    color: rgba(255, 255, 255, 0.881);
+    color: rgb(0, 0, 0);
     transition: 0.4s;
 }
 .info-text{
     width: 50%;
 }
+.logo-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    padding: 30px;
+    margin: 0;
+    background: #E6EBE6;
+}
+
 .text {
     font-size: 30px;
     margin-left: auto;
@@ -190,7 +196,6 @@ p {
 .content-img {
     opacity: 90%;
     height: auto;
-    max-height: 350px;
     width: 90%;
     border-radius: 7%;
 }
@@ -210,6 +215,11 @@ p {
     width: 100%;
 }
 
+.copyright {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: rgba(230, 235, 230, 0.43);
+}
 .copyright-container{
     display: flex;
     justify-content: center;
@@ -237,16 +247,15 @@ p {
 }
 
 .main-container-social-media-2{
+    height: 90px;
     display: flex;
     justify-content: center;
-    padding-bottom: 3%;
-    padding-top: 2%;
 }
 .container-social-media{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 25%;
+    width: 30%;
 
 }
 
@@ -331,14 +340,6 @@ p {
     .all-stuff{
         position: absolute;
     }
-    .link-text{
-        padding-left: 7px;
-    }
-    .description-container-social-media-1{
-        height: 80px;
-    }
-}
-@media screen and (max-width:600px) {
     .container-social-media{
         display: flex;
         flex-direction: row;
@@ -349,5 +350,11 @@ p {
         height: 100%;
         flex-direction: column;
         justify-content: center;
+    }
+    .link-text{
+        padding-left: 7px;
+    }
+    .description-container-social-media-1{
+        height: 80px;
     }
 }
